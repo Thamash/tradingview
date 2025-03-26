@@ -150,7 +150,7 @@ export function CustomizableChart() {
           name="description"
           content="Interactive demo of TradingView widget parameters"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://cdn.prod.website-files.com/6423ff94c9ceab2ddd24645d/643ea0a4a373984c339a4915_favicon32.png" />
       </Head>
 
       <header className="sticky top-0 z-10 bg-white dark:bg-gray-800 shadow-md">
@@ -170,7 +170,7 @@ export function CustomizableChart() {
                 />
               </svg>
               <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-                TradingView Widget Paraméter Demo
+                TradingView Widget Demo
               </h1>
             </div>
             <div className="flex items-center space-x-4">
