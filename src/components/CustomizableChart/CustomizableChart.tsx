@@ -1,4 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+
+// Extend the Window interface to include TradingView
+declare global {
+  interface Window {
+    TradingView?: any;
+  }
+}
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Head from 'next/head';
 import { TradingViewWidgetConfig } from './CustomizableChart.types';
