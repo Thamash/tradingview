@@ -143,9 +143,9 @@ export function CustomizableChart() {
   };
 
   return (
-    <div className={`min-h-screen pb-10 ${darkMode ? 'dark' : ''}`}>
+    <div className={`min-h-screen pb-10 bg-[#1C1C1C]`}>
       <Head>
-        <title>TradingView Widget Demo</title>
+        <title>Scaler MarketPulse</title>
         <meta
           name="description"
           content="Interactive demo of TradingView widget parameters"
@@ -153,10 +153,10 @@ export function CustomizableChart() {
         <link rel="icon" href="https://cdn.prod.website-files.com/6423ff94c9ceab2ddd24645d/643ea0a4a373984c339a4915_favicon32.png" />
       </Head>
 
-      <header className="sticky top-0 z-10 bg-white dark:bg-gray-800 shadow-md">
+      <header className="sticky top-0 z-10 scaler-card shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center text-scaler-green space-x-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-primary-600"
@@ -169,8 +169,8 @@ export function CustomizableChart() {
                   clipRule="evenodd"
                 />
               </svg>
-              <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-                TradingView Widget Demo
+              <h1 className="text-xl font-bold text-scaler-green">
+                Scaler MarketPulse
               </h1>
             </div>
             <div className="flex items-center space-x-4">
@@ -213,7 +213,7 @@ export function CustomizableChart() {
                 )}
               </button>
               <button
-                className="p-2 rounded-md bg-gray-200 dark:bg-gray-700 focus:outline-none"
+                className="p-2 rounded-md bg-gray-700 focus:outline-none scaler-button"
                 onClick={() => setDarkMode(!darkMode)}
                 aria-label="Toggle dark mode"
               >
@@ -247,7 +247,7 @@ export function CustomizableChart() {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden mb-8">
+        <div className="bg-[#1C1C1C] rounded-xl shadow-lg overflow-hidden mb-8">
           <div
             ref={containerRef}
             id="tradingview-widget-container"

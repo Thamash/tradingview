@@ -9,8 +9,8 @@ const DisplayTab = ({
 }: DisplayTabProps) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <div className="bg-white dark:bg-gray-700 rounded-lg shadow-sm p-4 border border-gray-200 dark:border-gray-600">
-        <h3 className="font-medium text-gray-800 dark:text-white mb-3">
+      <div className="scaler-card rounded-lg shadow-sm p-4 border border-light-green">
+        <h3 className="font-medium mb-3">
           {getTranslation('labels.share', widgetOptions.locale)}
         </h3>
         <div className="space-y-3">
@@ -22,7 +22,7 @@ const DisplayTab = ({
               checked={widgetOptions.enable_publishing}
               onChange={() => handleBooleanChange('enable_publishing')}
             />
-            <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+            <span className="ml-2 text-sm text-gray-300">
               {getTranslation('labels.allowShare', widgetOptions.locale)}
               <InfoTooltip
                 text={getTranslation('enable_publishing', widgetOptions.locale)}
@@ -38,7 +38,7 @@ const DisplayTab = ({
               checked={widgetOptions.save_image}
               onChange={() => handleBooleanChange('save_image')}
             />
-            <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+            <span className="ml-2 text-sm text-gray-300">
               {getTranslation('labels.allowSaveImage')}
               <InfoTooltip
                 text={getTranslation('save_image', widgetOptions.locale)}
@@ -48,11 +48,11 @@ const DisplayTab = ({
         </div>
       </div>
 
-      <div className="bg-white dark:bg-gray-700 rounded-lg shadow-sm p-4 border border-gray-200 dark:border-gray-600">
-        <h3 className="font-medium text-gray-800 dark:text-white mb-3">
+      <div className="scaler-card rounded-lg shadow-sm p-4 border border-light-green">
+        <h3 className="font-medium  text-white mb-3">
           {getTranslation('labels.toolbar', widgetOptions.locale)}
         </h3>
-        <div className="space-y-3">
+        <div className="space-y-3 ">
           <label className="flex items-center">
             <input
               type="checkbox"
@@ -61,7 +61,7 @@ const DisplayTab = ({
               checked={widgetOptions.hide_side_toolbar}
               onChange={() => handleBooleanChange('hide_side_toolbar')}
             />
-            <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+            <span className="ml-2 text-sm text-gray-300">
               {getTranslation('labels.hideSideToolbar', widgetOptions.locale)}
               <InfoTooltip
                 text={getTranslation('hide_side_toolbar', widgetOptions.locale)}
@@ -77,7 +77,7 @@ const DisplayTab = ({
               checked={widgetOptions.hide_drawing_toolbar}
               onChange={() => handleBooleanChange('hide_drawing_toolbar')}
             />
-            <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+            <span className="ml-2 text-sm text-gray-300">
               {getTranslation(
                 'labels.hideDrawingToolbar',
                 widgetOptions.locale
@@ -92,8 +92,8 @@ const DisplayTab = ({
           </label>
         </div>
       </div>
-      <div className="bg-white dark:bg-gray-700 rounded-lg shadow-sm p-4 border border-gray-200 dark:border-gray-600">
-        <h3 className="font-medium text-gray-800 dark:text-white mb-3">
+      <div className="scaler-card rounded-lg shadow-sm p-4 border border-light-green">
+        <h3 className="font-medium text-white mb-3">
           {getTranslation('labels.dataDisplay', widgetOptions.locale)}
         </h3>
         <div className="space-y-3">
@@ -105,7 +105,7 @@ const DisplayTab = ({
               checked={widgetOptions.hide_volume}
               onChange={() => handleBooleanChange('hide_volume')}
             />
-            <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+            <span className="ml-2 text-sm text-gray-300">
               {getTranslation('labels.hideTraffic', widgetOptions.locale)}
               <InfoTooltip
                 text={getTranslation('hide_volume', widgetOptions.locale)}
@@ -121,7 +121,7 @@ const DisplayTab = ({
               checked={widgetOptions.allow_symbol_change}
               onChange={() => handleBooleanChange('allow_symbol_change')}
             />
-            <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+            <span className="ml-2 text-sm text-gray-300">
               {getTranslation('labels.allowSymbolChange', widgetOptions.locale)}
               <InfoTooltip
                 text={getTranslation(
@@ -134,8 +134,8 @@ const DisplayTab = ({
         </div>
       </div>
 
-      <div className="bg-white dark:bg-gray-700 rounded-lg shadow-sm p-4 border border-gray-200 dark:border-gray-600">
-        <h3 className="font-medium text-gray-800 dark:text-white mb-3">
+      <div className="scaler-card rounded-lg shadow-sm p-4 border border-light-green">
+        <h3 className="font-medium text-white mb-3">
           {getTranslation('labels.allowSymbolChange', widgetOptions.locale)}
         </h3>
         <div className="space-y-3">
@@ -147,7 +147,7 @@ const DisplayTab = ({
               checked={widgetOptions.withdateranges}
               onChange={() => handleBooleanChange('withdateranges')}
             />
-            <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+            <span className="ml-2 text-sm text-gray-300">
               {getTranslation('labels.showDateRange')}
               <InfoTooltip
                 text={getTranslation('withdateranges', widgetOptions.locale)}
@@ -163,7 +163,7 @@ const DisplayTab = ({
               checked={widgetOptions.details}
               onChange={() => handleBooleanChange('details')}
             />
-            <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+            <span className="ml-2 text-sm text-gray-300">
               {getTranslation('labels.showLabels', widgetOptions.locale)}
               <InfoTooltip
                 text={getTranslation('details', widgetOptions.locale)}
@@ -173,8 +173,8 @@ const DisplayTab = ({
         </div>
       </div>
 
-      <div className="bg-white dark:bg-gray-700 rounded-lg shadow-sm p-4 border border-gray-200 dark:border-gray-600">
-        <h3 className="font-medium text-gray-800 dark:text-white mb-3">
+      <div className="scaler-card rounded-lg shadow-sm p-4 border border-light-green">
+        <h3 className="font-medium text-white mb-3">
           {getTranslation('labels.moreDetails', widgetOptions.locale)}
         </h3>
         <div className="space-y-3">
@@ -186,7 +186,7 @@ const DisplayTab = ({
               checked={widgetOptions.show_popup_button}
               onChange={() => handleBooleanChange('show_popup_button')}
             />
-            <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+            <span className="ml-2 text-sm text-gray-300">
               {getTranslation('labels.showPopUpbutton', widgetOptions.locale)}
               <InfoTooltip
                 text={getTranslation('show_popup_button', widgetOptions.locale)}
@@ -202,7 +202,7 @@ const DisplayTab = ({
               checked={widgetOptions.hotlist}
               onChange={() => handleBooleanChange('hotlist')}
             />
-            <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+            <span className="ml-2 text-sm text-gray-300">
               {getTranslation('labels.showHotlist', widgetOptions.locale)}
               <InfoTooltip
                 text={getTranslation('hotlist', widgetOptions.locale)}
@@ -218,7 +218,7 @@ const DisplayTab = ({
               checked={widgetOptions.calendar}
               onChange={() => handleBooleanChange('calendar')}
             />
-            <span className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+            <span className="ml-2 text-sm text-gray-300">
               {getTranslation('labels.showCalendar', widgetOptions.locale)}
               <InfoTooltip
                 text={getTranslation('calendar', widgetOptions.locale)}

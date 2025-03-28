@@ -6,7 +6,7 @@ export const ConfigTab = ({ widgetOptions }: ConfigTabProps) => {
   return (
     <div>
       <div className="flex justify-between items-center mb-4">
-        <h3 className="text-lg font-medium text-gray-900 dark:text-white">
+        <h3 className="text-lg font-medium text-white">
           {getTranslation('labels.jsonConfiguration', widgetOptions.locale)}
         </h3>
         <button
@@ -18,7 +18,7 @@ export const ConfigTab = ({ widgetOptions }: ConfigTabProps) => {
               getTranslation('labels.configurationCopied', widgetOptions.locale)
             );
           }}
-          className="inline-flex items-center px-3 py-1.5 border border-gray-300 dark:border-gray-600 rounded-md text-sm font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+          className="inline-flex items-center scaler-button px-3 py-1.5 border border-gray-600 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
         >
           <svg
             className="mr-1.5 h-4 w-4"
@@ -37,12 +37,12 @@ export const ConfigTab = ({ widgetOptions }: ConfigTabProps) => {
           {getTranslation('labels.copy', widgetOptions.locale)}
         </button>
       </div>
-      <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-4 overflow-auto max-h-96">
-        <pre className="text-sm text-gray-800 dark:text-gray-300 whitespace-pre-wrap font-mono">
+      <div className=" rounded-lg scaler-card p-4 overflow-auto max-h-96">
+        <pre className="text-sm  whitespace-pre-wrap font-mono">
           {JSON.stringify(widgetOptions, null, 2)}
         </pre>
       </div>
-      <div className="mt-4 bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
+      <div className="mt-4 bg-green-900/20 rounded-lg p-4">
         <div className="flex">
           <div className="flex-shrink-0">
             <svg
@@ -58,10 +58,10 @@ export const ConfigTab = ({ widgetOptions }: ConfigTabProps) => {
             </svg>
           </div>
           <div className="ml-3">
-            <h3 className="text-sm font-medium text-green-800 dark:text-green-300">
+            <h3 className="text-sm font-medium text-green-300">
               {getTranslation('labels.userManual', widgetOptions.locale)}
             </h3>
-            <div className="mt-2 text-sm text-green-700 dark:text-green-300">
+            <div className="mt-2 text-sm text-green-300">
               <p>
                 {getTranslation(
                   'labels.userManualHintText',

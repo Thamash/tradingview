@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Footer from '@/components/Footer/Footer';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TradingView Widget Demo",
-  description: "Scaler Agency - TradingView Widget Demo",
+  title: "Scaler MarketPulse",
+  description: "Scaler MarketPulse",
 };
 
 export default function RootLayout({
@@ -25,9 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

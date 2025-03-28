@@ -39,7 +39,7 @@ export const InfoTooltip = ({ text }: InfoTooltipProps) => {
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-4 w-4 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-colors"
+          className="h-4 w-4 text-gray-500 hover:text-gray-300 transition-colors"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -67,11 +67,11 @@ export const InfoTooltip = ({ text }: InfoTooltipProps) => {
             marginTop: '-10px'
           }}
         >
-          <div className="bg-gray-800 dark:bg-gray-700 text-white text-xs rounded shadow-lg p-2 max-w-xs">
+          <div className="bg-grey text-white text-xs rounded shadow-lg p-2 max-w-xs">
             {text}
           </div>
           <div
-            className="absolute w-2 h-2 bg-gray-800 dark:bg-gray-700 transform rotate-45 left-1/2 -translate-x-1/2"
+            className="absolute w-2 h-2 bg-gray-300 transform rotate-45 left-1/2 -translate-x-1/2"
             style={{
               top: '100%',
               marginTop: '-4px'

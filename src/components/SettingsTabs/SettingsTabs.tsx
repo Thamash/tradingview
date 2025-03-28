@@ -19,7 +19,7 @@ const SettingsTabs = ({
 }: SettingsTabsProps) => {
   const [activeTab, setActiveTab] = useState('basic');
   const tabOptions = [
-    { id: 'basic', label: getTranslation('labels.tabOptions.basic') },
+    { id: 'basic', label: getTranslation('labels.tabOptions.basic', widgetOptions.locale) },
     {
       id: 'appearance',
       label: getTranslation(
@@ -49,19 +49,19 @@ const SettingsTabs = ({
   ];
   return (
     <>
-      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden mb-6">
-        <div className="border-b dark:border-gray-700">
+      <div className="scaler-card rounded-xl shadow-lg overflow-hidden mb-6">
+        <div className="border-b border-gray-700">
           <nav className="flex overflow-x-auto" aria-label="Tabs">
             {tabOptions.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 className={`
-                        px-4 py-3 text-sm font-medium whitespace-nowrap
+                        px-4 py-3 text-sm font-medium whitespace-nowrap cursor-pointer
                         ${
                           activeTab === tab.id
-                            ? 'border-b-2 border-primary-500 text-primary-600 dark:text-primary-400'
-                            : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300'
+                            ? 'border-b-2 border-primary-500 text-scaler-green'
+                            : 'text-gray-400 hover:text-gray-300'
                         }
                       `}
                 aria-current={activeTab === tab.id ? 'page' : undefined}

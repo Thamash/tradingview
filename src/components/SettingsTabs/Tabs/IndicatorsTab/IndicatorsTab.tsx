@@ -22,7 +22,7 @@ const IndicatorsTab = ({
             />
             <label
               htmlFor={`study-${study}`}
-              className="ml-2 block text-sm text-gray-700 dark:text-gray-300"
+              className="ml-2 block text-sm text-gray-300"
             >
               {study}
               <InfoTooltip
@@ -33,7 +33,7 @@ const IndicatorsTab = ({
         ))}
       </div>
 
-      <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 mt-4">
+      <div className="bg-blue-900/20 rounded-lg p-4 mt-4">
         <div className="flex items-start">
           <div className="flex-shrink-0">
             <svg
@@ -49,13 +49,13 @@ const IndicatorsTab = ({
             </svg>
           </div>
           <div className="ml-3">
-            <h3 className="text-sm font-medium text-blue-800 dark:text-blue-300">
+            <h3 className="text-sm font-medium text-blue-300">
               {getTranslation(
                 'labels.indicatorInformation',
                 widgetOptions.locale
               )}
             </h3>
-            <div className="mt-2 text-sm text-blue-700 dark:text-blue-300">
+            <div className="mt-2 text-sm text-blue-300">
               <p>
                 {getTranslation(
                   'labels.indicatorHintText',

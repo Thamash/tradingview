@@ -7,9 +7,9 @@ const FastSettings = ({
   setWidgetOptions,
 }: FastSettingsProps) => {
   return (
-    <div className="mt-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+    <div className="mt-6 scaler-card rounded-xl shadow-lg overflow-hidden">
       <div className="p-6">
-        <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+        <h2 className="text-xl font-bold text-scaler-green mb-4">
           {getTranslation('labels.fastSettings', widgetOptions.locale)}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -22,7 +22,7 @@ const FastSettings = ({
                 style: '1',
               }));
             }}
-            className="btn btn-primary w-full"
+            className="btn btn-primary w-full cursor-pointer text-grey-300"
           >
             {getTranslation('labels.appleDaily', widgetOptions.locale)}
           </button>
@@ -36,7 +36,7 @@ const FastSettings = ({
                 style: '1',
               }));
             }}
-            className="btn btn-primary w-full"
+            className="btn btn-primary w-full cursor-pointer text-grey-300"
           >
             {getTranslation('labels.bitcoinHourly', widgetOptions.locale)}
           </button>
@@ -49,7 +49,7 @@ const FastSettings = ({
                 studies: ['RSI', 'MACD'],
               }));
             }}
-            className="btn btn-secondary w-full"
+            className="btn btn-secondary w-full cursor-pointer text-grey-300"
           >
             {getTranslation('labels.on', widgetOptions.locale)}
             RSI + MACD
@@ -63,7 +63,7 @@ const FastSettings = ({
                 studies: ['Moving Average'],
               }));
             }}
-            className="btn btn-secondary w-full"
+            className="btn btn-secondary w-full cursor-pointer text-grey-300"
           >
             {getTranslation(
               'labels.linesAndMovingAverage',

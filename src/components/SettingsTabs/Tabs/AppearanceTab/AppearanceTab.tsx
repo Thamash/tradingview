@@ -13,7 +13,7 @@ const AppearanceTab = ({
         <div>
           <label
             htmlFor="toolbar_bg"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+            className="block text-sm font-medium text-gray-300 mb-1"
           >
             {getTranslation('labels.backgroundColor', widgetOptions.locale)}
             <InfoTooltip
@@ -24,11 +24,11 @@ const AppearanceTab = ({
             <input
               type="color"
               id="toolbar_bg"
-              className="h-10 w-10 cursor-pointer rounded border"
+              className="h-10 w-10 border-light-green cursor-pointer rounded border"
               value={widgetOptions.toolbar_bg}
               onChange={(e) => handleOptionChange('toolbar_bg', e.target.value)}
             />
-            <span className="text-sm text-gray-500 dark:text-gray-400">
+            <span className="text-sm text-gray-400">
               {widgetOptions.toolbar_bg}
             </span>
           </div>
@@ -37,7 +37,7 @@ const AppearanceTab = ({
         <div>
           <label
             htmlFor="width"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+            className="block text-sm font-mediumtext-gray-300 mb-1"
           >
             {getTranslation('labels.width', widgetOptions.locale)}
             <InfoTooltip text={getTranslation('width', widgetOptions.locale)} />
@@ -45,7 +45,7 @@ const AppearanceTab = ({
           <input
             type="text"
             id="width"
-            className="input px-3 py-2 bg-white dark:bg-gray-700 border dark:border-gray-600 rounded-md shadow-sm"
+            className="input border-light-green px-3 py-2 scaler-button border border-white rounded-md shadow-sm"
             value={widgetOptions.width}
             onChange={(e) => handleOptionChange('width', e.target.value)}
           />
@@ -54,7 +54,7 @@ const AppearanceTab = ({
         <div>
           <label
             htmlFor="height"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+            className="block text-sm font-medium text-gray-300 mb-1"
           >
             {getTranslation('labels.height', widgetOptions.locale)}
             <InfoTooltip
@@ -64,7 +64,7 @@ const AppearanceTab = ({
           <input
             type="text"
             id="height"
-            className="input px-3 py-2 bg-white dark:bg-gray-700 border dark:border-gray-600 rounded-md shadow-sm"
+            className="input border-light-green px-3 py-2 scaler-button border border-white rounded-md shadow-sm"
             value={widgetOptions.height}
             onChange={(e) => handleOptionChange('height', e.target.value)}
           />
@@ -75,7 +75,7 @@ const AppearanceTab = ({
         <div>
           <label
             htmlFor="popup_width"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+            className="block text-sm font-medium text-gray-300 mb-1"
           >
             {getTranslation('labels.popupWidth', widgetOptions.locale)}
             <InfoTooltip
@@ -85,7 +85,7 @@ const AppearanceTab = ({
           <input
             type="text"
             id="popup_width"
-            className="input px-3 py-2 bg-white dark:bg-gray-700 border dark:border-gray-600 rounded-md shadow-sm"
+            className="input px-3 py-2 scaler-button border-light-green border border-gray-600 rounded-md shadow-sm"
             value={widgetOptions.popup_width}
             onChange={(e) => handleOptionChange('popup_width', e.target.value)}
           />
@@ -94,7 +94,7 @@ const AppearanceTab = ({
         <div>
           <label
             htmlFor="popup_height"
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+            className="block text-sm font-medium text-gray-300 mb-1"
           >
             {getTranslation('labels.popupHeight', widgetOptions.locale)}
             <InfoTooltip
@@ -104,7 +104,7 @@ const AppearanceTab = ({
           <input
             type="text"
             id="popup_height"
-            className="input px-3 py-2 bg-white dark:bg-gray-700 border dark:border-gray-600 rounded-md shadow-sm"
+            className="input px-3 py-2 scaler-button border-light-green border border-gray-600 rounded-md shadow-sm"
             value={widgetOptions.popup_height}
             onChange={(e) => handleOptionChange('popup_height', e.target.value)}
           />
